@@ -2,7 +2,7 @@ node {
 	
     def application = "devopsexample"
     
-    def dockerhubaccountid = "vikidvg"
+    def dockerhubaccountid = "ak2277"
 	   
     def mvnHome = tool 'maven-3.5.2'
 
@@ -11,7 +11,7 @@ node {
     def dockerImageTag = "${dockerhubaccountid}/${application}:${env.BUILD_NUMBER}"
     
     stage('Clone Repo') { 
-      git url:'https://github.com/vdharmaraj/PGDO_Proj3.git',branch:'main' //update your forked repo           
+      git url:'https://github.com/AkshaySuthar4592/Devops-Integration',branch:'main' //update your forked repo           
       mvnHome = tool 'maven-3.5.2'
     }    
   
