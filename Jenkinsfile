@@ -4,7 +4,7 @@ node {
     
     def dockerhubaccountid = "ak2277"
 	   
-    def mvnHome = tool 'maven-3.8.6'
+    def mvnHome = tool 'maven-3.5.2'
 
     def dockerImage
  
